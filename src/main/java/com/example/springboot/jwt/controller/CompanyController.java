@@ -30,7 +30,7 @@ public class CompanyController {
 	}  
 	
 	@PostMapping("/createCompany")  
-    @PreAuthorize("hasAuthority('TEAM_MEMBER')")
+    @PreAuthorize("hasAuthority('ADMIN')")
 	public Company company(@RequestBody Company company)   
 	{  
 	return companyService.createCompany(company);  
@@ -54,7 +54,7 @@ public class CompanyController {
 	
 
 	@GetMapping("/allTeamsByCompany")  
-    @PreAuthorize("hasAnyAuthority('TEAM_MEMBER', 'ADMIN')")
+    @PreAuthorize("hasAnyAuthority('TEAM_MEMBER')")
 	public List<Company> allTeamsByCompany()   
 	{  
 	List<Company> companies = companyService.allTeamsByCompany();  
