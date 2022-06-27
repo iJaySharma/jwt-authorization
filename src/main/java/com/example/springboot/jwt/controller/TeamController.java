@@ -19,6 +19,7 @@ TeamService teamService;
 CompanyService companyService;
 
 @PostMapping("/createTeam/{companyId}")  
+@PreAuthorize("hasAnyAuthority('ADMIN')")	
 private Team createTeam(@PathVariable Integer companyId, @RequestBody Team team)   
 {  
 	 team.setCompany(companyService.fetchCompany(companyId));
