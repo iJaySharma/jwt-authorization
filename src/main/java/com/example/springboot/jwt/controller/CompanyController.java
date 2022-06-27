@@ -16,7 +16,7 @@ import com.example.springboot.jwt.service.CompanyService;
 
 
 @RestController
-@RequestMapping("comp")
+@RequestMapping("manageCompany")
 public class CompanyController {
 
 	@Autowired  
