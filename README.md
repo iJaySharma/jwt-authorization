@@ -14,7 +14,7 @@ This project is built using the following technologies
 5) Maven
 
 ## To Run this project 
-1) run mvn clean install on root
+1) run <b>mvn clean install</b> on root
 2) execute cmd mvn spring-boot:run 
 
 
@@ -28,17 +28,6 @@ This project is built using the following technologies
 <b>List of user</b>
 1) User1 : username = user1 and password = 1234 with role ADMIN and TEAM_MEMBER
 1) User2 : username = user2 and password = 1234 with role TEAM_MEMBER  
-
-
-
-
-
-
-
-
-
-
-
 
 
 
